@@ -1,4 +1,3 @@
-
 import os
 import cv2
 cap=cv2.VideoCapture(0)
@@ -93,7 +92,5 @@ while True:
         cv2.imwrite(directory+'Y/'+str(count['y'])+'.png',frame)
     if interrupt & 0xFF == ord('z'):
         cv2.imwrite(directory+'Z/'+str(count['z'])+'.png',frame)
-
-
 cap.release()
 cv2.destroyAllWindows()
